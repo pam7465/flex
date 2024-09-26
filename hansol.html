@@ -33,13 +33,62 @@
             background-position-y:center;
             text-indent:-9999px;
         }
+        .nav>ul{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+            align-items:center;
+            width:700px;
+            list-style:none;
+        }
+        .gn>ul>li>a{
+            font-weight:700;
+            font-size:1.2em;
+            color:#111111;
+            text-decoration:none;
+        }
+
+        .qn>ul{
+            width:240px;
+        }
+        .qn>ul>li>a{
+            display:block;
+            border-radius:20px;
+            padding:9px;
+            background-color:#1177cc;
+            font-weight:700;
+            font-size:0.8em;
+            color:#ffffff;
+            text-decoration:none;
+        }
+        .qn>ul>li:nth-child(1)>a{
+            background-color:transparent;
+            color:#555555;
+        }
+        .qn>ul>li:nth-child(2)>a{
+            padding-left:40px;
+            background-image:url(./images/ico-virtual.png);
+            background-repeat:no-repeat;
+            background-position-x:9px;
+            background-position-y:center;
+            background-size:26px;
+        }
+        .qn>ul>li:nth-child(3)>a{
+            width:35px;
+            height:35px;
+            border-radius:50%;
+            padding:0;
+            background-color:#555555;
+            text-align:center;
+            line-height:35px;
+        }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <h1 class="logo"><a href="#">한솔제지</a></h1>
-            <nav class="gn">
+            <nav class="gn nav">
                 <ul>
                     <li><a href="#">제품소개</a></li>
                     <li><a href="#">회사소개</a></li>
@@ -49,7 +98,7 @@
                     <li><a href="#">소식</a></li>
                 </ul>
             </nav>
-            <nav class="qn">
+            <nav class="qn nav">
                 <ul>
                     <li><a href="#">고객문의</a></li>
                     <li><a href="#">가상전시관</a></li>
