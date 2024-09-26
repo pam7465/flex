@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex02</title>
+    <style>
+        .flex-container{
+            display:flex;
+            flex-flow:column;
+            flex-flow:column-reverse;            
+            flex-flow:row-reverse;
+            flex-flow:row;
+            justify-content:flex-start;
+            justify-content:flex-end;
+            justify-content:center;
+            justify-content:space-between;
+            justify-content:space-around;
+            justify-content:space-evenly;
+            width:500px;
+            height:500px;
+            margin:0 auto;
+            background-color:lightblue;
+        }
+        .flex-item{
+            width:100px;
+            height:100px;
+            background-color:lightcoral;
+            font-size:2em;
+            text-align:center;
+            line-height:100px;        
+        }
+
+        section{
+            display:flex;
+            flex-flow:column;
+            justify-content:space-around;
+            width:500px;
+            height:500px;
+            margin:0 auto;
+            background-color:lightgreen;
+        }
+        a{
+            width:100px;
+            height:100px;
+            background-color:lightpink;
+            font-size:2em;
+            text-align:center;
+            line-height:100px;
+        }
+        header{
+            display:flex;
+            flex-flow:row;
+            /* 주축방향 맞춤 */
+            justify-content:center;
+            /* 교차축방향 맞춤 */
+            align-items:flex-start;
+            align-items:flex-end;
+            align-items:center;
+
+            width:500px;
+            height:500px;
+            margin:0 auto;
+            background-color:darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+    <section>
+        <a href="#">일</a>
+        <a href="#">이</a>
+        <a href="#">삼</a>
+    </section>
+    <header>
+        <h1>제목</h1>
+    </header>
+</body>
+</html>
