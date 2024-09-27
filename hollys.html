@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>할리스</title>
     <style>
+        @font-face {
+            font-family:'NanumGothic';
+            src: url(./fonts/NanumGothic-Regular.ttf);
+            font-weight:400;
+        }
+        @font-face {
+            font-family:'NanumGothic';
+            src: url(./fonts/NanumGothic-Bold.ttf);
+            font-weight:700;
+        }
+        @font-face {
+            font-family:'NanumGothic';
+            src: url(./fonts/NanumGothic-ExtraBold.ttf);
+            font-weight:900;
+        }
         *{
             box-sizing:border-box;
             margin:0;
@@ -20,12 +35,62 @@
             height:146px;
             margin:0 auto;
         }
+        .header-top{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+            align-items:flex-start;
+            padding-top:17px;
+        }
+        .q-nav01,.q-nav02{
+            display:flex;
+            flex-flow:row;
+            justify-content:flex-start;
+            align-items:center;
+            list-style:none;
+        }
+        .q-nav01>li,.q-nav02>li{
+            margin-right:13px;
+        }
+        .q-nav02>li>a{
+            font-family:'NanumGothic';
+            font-weight:900;
+            font-size:11px;
+            color:#666666;
+            text-decoration:none;
+        }
+        .gn{
+            display:flex;
+            flex-flow:row;
+            list-style:none;
+        }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="container">
-
+            <div class="header-top">                
+                <ul class="q-nav01">
+                    <li><a href="#"><img src="./images/q-menu01.png" alt="커피차 안내"></a></li>
+                    <li><a href="#"><img src="./images/q-menu02.png" alt="창업설명회"></a></li>
+                    <li><a href="#"><img src="./images/q-menu03.png" alt="기업특판"></a></li>
+                </ul>
+                <h1><a href="#"><img src="./images/logo-hollys.png" alt="할리스 커피"></a></h1>
+                <ul class="q-nav02">
+                    <li><a href="#">멤버십 로그인</a></li>
+                    <li><a href="#">멤버십 가입</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <ul class="gn">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">HOLLYS Mall</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">HOLLYS News</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">HOLLYS Is</a></li>
+            </ul>
         </div>
     </header>
 </body>
