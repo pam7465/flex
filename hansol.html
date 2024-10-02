@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".slider").bxSlider();
+        });
+    </script>
     <title>한솔제지</title>
     <style>
         *{
@@ -87,9 +95,16 @@
             line-height:35px;
         }
 
+        .paper{
+            padding-top:140px;
+        }
         .paper>.container{
             width:1600px;
             margin:0 auto;
+        }
+
+        .paper>.container>.art>img{
+            width:1600px;
         }
     </style>
 </head>
@@ -116,8 +131,8 @@
             </nav>
         </div>
     </header>
-    <section class="sec slider paper">
-        <div class="container">
+    <section class="sec paper">
+        <div class="container slider">
             <article class="art art01">
                 <h2>한솔루션</h2>
                 <img src="./images/img-paper01.jpg" alt="한솔루션">
@@ -155,7 +170,7 @@
             </article>
         </div>
     </section>
-    <section class="sec slider identity">
+    <section class="sec identity">
 
     </section>
     <section class="sec intra-net">
